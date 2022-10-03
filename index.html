@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Link to the style.css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Link to normlize.css -->
+  <link rel="stylesheet" href="css/normlize.css">
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- Start Header -->
+  <header>
+    <div class="container">
+         <!-- Logo-->
+      <div class="logo">
+        <a href="index.html">
+           <img src="images/logo.svg"
+            alt="logo"
+            width="138"
+            height="20">
+        </a>
+      </div>
+      <!-- open -->
+      <div class="icon-menu">
+        <a href="#">
+          <img src="images/icon-menu.svg"
+          alt="16"
+          width="15" 
+          height="15">
+        </a>
+      </div>
+      <!-- cart -->
+      <div id="icon-cart">
+        <a href="#">
+          <img src="images/icon-cart.svg"
+          alt="cart"
+          width="20"
+          height="20">
+        </a>
+        <div class="cart-count"></div>
+      </div>
+      <!-- avatar -->
+      <div class="avatar">
+        <img src="images/image-avatar.png"
+        alt="avatar"
+        width="30"
+        height="30">
+      </div>
+      <!-- Start Nav -->
+      <nav class="side-nav">
+        <div class="icon-close">
+          <a href="#">
+            <img src="images/icon-close.svg"
+            alt="close"
+            width="14"
+            height="15">
+          </a>
+         
+        </div>
+        <ul>
+          <li>
+            <a href="#">Collections</a>
+          </li>
+          <li>
+            <a href="#">Men</a>
+          </li>
+          <li>
+            <a href="#">Women</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>  
+      </nav>
+      </div>
+  </header>
+  <!-- End Header -->
+
+
+  <!-- Start Main -->
+<main class="main">
+  <div class="container">
+    <!-- about company -->
+    <section class="intro">
+      <div>
+        <h5>SNEAKEER COMPANY</h5>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+      </div>
+        <!-- price -->
+        <div class="price">
+          <span>$125.00</span>
+          <span> 50%</span>
+          <span><del>$250.00</del></span>
+        </div>
+        <!-- inptut -->
+        <div class="addtocart">
+          <label for="number" class="label">
+            <input type="number" id="number">
+            <button id="plus">
+              <a href="#">
+                <img src="images/icon-plus.svg" alt="to plus number of products">
+              </a>
+            </button>
+             <button id="minus">
+              <a href="#">
+                <img src="images/icon-minus.svg" alt="to minus number of products">
+              </a>
+            </button>
+          </label>
+          <button class="add">
+            <img src="images/icon-cart-white.svg">
+            Add to cart
+          </button>
+        </div>
+    </section>
+       <!-- slider-->
+    <section class="slider">    
+        <div class="next-prev">
+          <button id="next">
+            <img src="images/icon-next.svg"
+            width="13"
+            height="18">
+          </button>
+          <button id="prev">
+            <img src="images/icon-previous.svg"
+            width="13"
+            height="18">
+          </button>
+        </div>
+      <div class="slides">
+          <img src="images/image-product-1.jpg"
+          alt="image-product-1" 
+          width="300"
+          height="300">
+          <img src="images/image-product-2.jpg"
+          alt="image-product-2" 
+          width="300"
+          height="300">
+          <img src="images/image-product-3.jpg"
+          alt="image-product-3" 
+          width="300"
+          height="300">
+          <img src="images/image-product-4.jpg"
+          alt="image-product-4" 
+          width="300"
+          height="300">
+      <div class="check-cart">
+        <div class="container">            
+          <h4>Cart</h4>
+            <div class="check-cart-final">
+                <img src="images/image-product-1.jpg"
+                alt="image-product-1">
+                <p></p>
+            </div>
+              <p class="empty-p">Your cart is empty.</p>
+              <button class="check">Checkout</button>
+        </div>
+      </div>
+        </div>
+        <div class="slides-thumbnail">
+          <img src="images/image-product-1-thumbnail.jpg"
+          alt="image-product-1-thumbnail" 
+          width="70"
+          height="70">
+          <img src="images/image-product-2-thumbnail.jpg"
+          alt="image-product-1" 
+          width="70"
+          height="70">
+          <img src="images/image-product-3-thumbnail.jpg"
+          alt="image-product-1" 
+          width="70"
+          height="70">
+          <img src="images/image-product-4-thumbnail.jpg"
+          alt="image-product-1" 
+          width="70"
+          height="70">
+        </div>
+    </section>
+  </div>
+</main>
+
+  
+ <!--  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="javascript/main.js"></script>
+</body>
+</html>
